@@ -13,7 +13,7 @@ module.exports = function () {
             .pipe($.gp.cssbeautify({
                 indent: '  ',
                 openbrace: 'end-of-line',
-                autosemicolon: false
+                autosemicolon: true
             }))
             .pipe($.gp.sourcemaps.write())
             .pipe($.gulp.dest("build/static/css/"))

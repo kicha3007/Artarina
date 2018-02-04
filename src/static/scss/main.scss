@@ -1,5 +1,7 @@
-$main-color: rgba(236, 0, 124, 1);
-$main-color-hover: rgba(236, 0, 124, 0.7);
+@import 'header';
+
+$main-color: rgba(176, 203, 31, 1);
+$main-color-hover: rgba(176, 203, 31, 0.7);
 
 
 /******************* it-all-style *******************/
@@ -77,9 +79,8 @@ body * {
   text-align: center;
   user-select: none;
   border: none;
-  padding: 11px 10px;
-  font-size: 16px;
-  border-radius: 5px;
+  padding: 12px 10px;
+  font-size: 20px;
   transition: all 0.2s ease-in-out;
   background-color: $main-color;
   color: #ffffff;
@@ -97,7 +98,22 @@ body * {
 .it-btn:visited {
   color: #ffffff;
   text-decoration: none;
+}
 
+.it-btn--transparent {
+  color: rgba(0, 0, 0, 1);
+  background-color: transparent;
+  border: 2px solid $main-color
+}
+
+.it-btn--transparent:hover {
+  background-color: $main-color-hover;
+}
+
+.it-btn--transparent:hover,
+.it-btn--transparent:active,
+.it-btn--transparent:visited {
+  color: rgba(0, 0, 0, 1);
 }
 
 
@@ -119,6 +135,21 @@ body * {
 }
 
 @media (max-width: 480px) { /*phones*/
+  .portfolio .items .item {
+    width: calc(100% - 10px);
+    margin-left: calc(0% + 5px);
+    margin-right: calc(0% + 5px);
+    background: red;
+  }
+
+}
 
 
+@media (max-width: 480px) { /*phones*/
+
+  .portfolio .items .item {
+    width: calc(100% - 10px);
+    margin-left: calc(0% + 5px);
+    margin-right: calc(0% + 5px)
+  }
 }
