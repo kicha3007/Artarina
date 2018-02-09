@@ -1,8 +1,15 @@
+@import '__vars';
+@import 'main-offer';
+@import 'footer';
+@import 'callback';
+@import 'advantages';
+@import 'why';
+@import 'catalog';
 @import 'header';
-
-$main-color: rgba(176, 203, 31, 1);
-$main-color-hover: rgba(176, 203, 31, 0.7);
-
+@import 'price';
+@import 'calc';
+@import 'reviews';
+@import 'file';
 
 /******************* it-all-style *******************/
 
@@ -14,47 +21,87 @@ body {
   margin: 0;
 }
 
-body * {
-  box-sizing: border-box;
+html {
+  font-size: rem(16px);
 }
 
-html {
-  font-size: 16px;
+body {
+  font-size: rem(16px);
 }
 
 body * {
   font-family: "Roboto", "Ubuntu", "Open Sans", "Lato", sans-serif;
-  color: #333333;
+  color: rgba(0, 0, 0, 0.87);
   line-height: 1.42;
-}
-
-
-body * {
   box-sizing: border-box;
+
 }
 
 .it-container {
-  max-width: 1190px;
+  max-width: 1220px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 30px;
   margin: 0 auto;
+  @include tablets {
+    padding: 0 15px;
+  }
+}
+
+.it-container--big {
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+  @include tablets {
+    padding: 0 15px;
+  }
 }
 
 .it-all-title {
-  padding-top: 80px;
-  margin-bottom: 40px;
-  font-size: 30px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  font-size: rem(36px);
   line-height: 1.4;
   text-align: center;
-  font-weight: 300;
+  font-weight: 700;
+  position: relative;
+  @include phones {
+    font-size: rem(32px);
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
 }
 
-.it-all-title--color {
-  color: #ffffff;
+.it-all-title:before,
+.it-all-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  margin-left: -64px;
+  width: 128px;
+  height: 3px;
+  background-color: $main-color;
+  @include phones {
+    top: 30%;
+  }
+}
+
+.it-all-title:after {
+  top: auto;
+  bottom: 25%;
+  @include phones {
+    bottom: 18%;
+  }
 }
 
 .it-all--indent {
   margin-bottom: 80px;
+}
+
+.it-all--min-indent {
+  margin-bottom: 40px;
 }
 
 .it-main-page__wrapper {
@@ -79,8 +126,8 @@ body * {
   text-align: center;
   user-select: none;
   border: none;
-  padding: 12px 10px;
-  font-size: 20px;
+  padding: rem(12px) rem(10px);
+  font-size: rem(20px);
   transition: all 0.2s ease-in-out;
   background-color: $main-color;
   color: #ffffff;
@@ -103,7 +150,8 @@ body * {
 .it-btn--transparent {
   color: rgba(0, 0, 0, 1);
   background-color: transparent;
-  border: 2px solid $main-color
+  border: 2px solid $main-color;
+  font-weight: 400;
 }
 
 .it-btn--transparent:hover {
@@ -116,40 +164,28 @@ body * {
   color: rgba(0, 0, 0, 1);
 }
 
-
-
 /******************* media *******************/
-
 
 @media (max-width: 1200px) { /*desctop*/
 
-}
-
-@media (max-width: 992px) {  /*laptop*/
-
 
 }
 
-@media (max-width: 768px) { /* tablets*/
-
+@media (max-width: 992px) { /*laptop*/
+  html {
+    font-size: 15px;
+  }
 }
 
-@media (max-width: 480px) { /*phones*/
-  .portfolio .items .item {
-    width: calc(100% - 10px);
-    margin-left: calc(0% + 5px);
-    margin-right: calc(0% + 5px);
-    background: red;
+@media (max-width: 720px) { /* tablets*/
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) { /*phones*/
+  html {
+    font-size: 13px;
   }
 
-}
-
-
-@media (max-width: 480px) { /*phones*/
-
-  .portfolio .items .item {
-    width: calc(100% - 10px);
-    margin-left: calc(0% + 5px);
-    margin-right: calc(0% + 5px)
-  }
 }

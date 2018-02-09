@@ -2,6 +2,7 @@ global.$ = {
     gulp : require("gulp"),
     gp : require("gulp-load-plugins")(),
     bs : require('browser-sync').create(),
+    sg : require('smart-grid'),
 
     path: {
         tasks: require("./gulp/config/tasks.js")

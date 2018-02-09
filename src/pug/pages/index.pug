@@ -4,15 +4,37 @@ html(lang="ru-RU")
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width", initial-scale=1)
         title Artarina
-        link(rel="stylesheet" type="text/css" href="static/css/owl.carousel.min.css" )
         link(rel="stylesheet" type="text/css" href="static/css/main.css" )
         link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet")
+        link(href='images/favicon.png', rel='icon', sizes='32x32', type='image/png')
+
     body
         include header.pug
-        include footer.pug
+        include main-offer
+        include callback
+        .it-all-title Выбирая нас - время работает на Вас
+        include advantages
+        include footer
+        .it-all-title Почему у нас дешевле?
+        include why
+        .it-all-title Выберите кухню Вашей мечты
+        include catalog
+        include callback
+        .it-all-title В стоимость кухни входит:
+        include price
+        .it-all-title Рассчитайте стоимость вашей кухни:
+        include calc
+        include file
+        .it-all-title Отзывы наших клиентов
+        include reviews
 
 
 
-        script(type="text/javascript" src="static/js/jquery-3.3.1.min.js")
-        script(type="text/javascript" src="static/js/owl.carousel.min.js")
-        script(type="text/javascript" src="static/js/main.js")
+        script(src='static/js/jquery.min.js', type='text/javascript')
+        script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
+        script(src='static/js/jquery.mask.min.js', type='text/javascript')
+        script(src='static/js/jquery.validate.min.js', type='text/javascript')
+        script(src='static/js/slick.min.js', type='text/javascript')
+        script(src='static/js/nouislider.min.js', type='text/javascript')
+        script(src='static/js/wnumb.js', type='text/javascript')
+        script(src='static/js/main.js', type='text/javascript')

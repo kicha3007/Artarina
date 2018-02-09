@@ -4,5 +4,6 @@ module.exports = [
     "./gulp/tasks/sass",
     "./gulp/tasks/scripts",
     "./gulp/tasks/imagemin",
-    "./gulp/tasks/watch"
+    "./gulp/tasks/watch",
+    "./gulp/tasks/smartgrid"
 ];
