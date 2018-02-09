@@ -3,113 +3,105 @@
 @import "smart-grid";
 
 /***************************
-        Review Section
+        production Section
 ****************************/
-.review-container {
+.production-container {
   font-size: 0;
 }
 
-.review-side {
+.production-side {
   display: inline-block;
   vertical-align: top;
   width: 50%;
 }
 
 @media screen and (max-width: 840px) {
-  .review-side {
+  .production-side {
     display: block;
     width: 100%;
     min-width: 100%;
   }
 }
 
-.review-photo-side {
+.production-photo-side {
   padding-right: 1.875rem;
 }
 
-@media screen and (max-width: 840px) {
-  .review-photo-side {
-    padding-right: 0;
-    margin-bottom: 1.5625rem;
-  }
-}
 
-.review-photo-container {
+.production-photo-container {
   height: 20.625rem;
 }
 
-.review-photo__list-wrapper,
-.review-photo__main {
+.production-photo__list-wrapper,
+.production-photo__main {
   display: inline-block !important;
   vertical-align: top;
 }
 
-.review-photo__list-wrapper {
-  width: 15%;
+.production-photo__list-wrapper {
+  width: 18%;
+
 }
 
 @media screen and (max-width: 960px) {
-  .review-photo__list-wrapper {
-    display: none !important;
-  }
+
 }
 
-.review-photo__list-item {
+.production-photo__list-item {
   margin-bottom: 25px;
+  margin-right: 20px;
   opacity: .3;
   -webkit-transition: 250ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
   transition: 250ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  height: 60px !important;
-  width: 64px !important;
+  height: 102px !important;
+  width: 102px !important;
   overflow: hidden;
   display: flex !important;
   flex-wrap: wrap !important;
   justify-content: center;
   cursor: pointer;
+
 }
 
-.review-photo__list-item img {
+.production-photo__list-item img {
   display: block;
   max-width: 110%;
   height: auto;
+
 }
 
-.review-photo__list-item:focus {
+.production-photo__list-item:focus {
   outline: none;
 }
 
-.review-photo__list-item.slick-current {
+.production-photo__list-item.slick-current {
   opacity: 1;
 }
 
-.review-photo__main {
-  width: 85%;
-  height: 20.625rem;
+
+.production-photo__main {
+  width: 82%;
+  height: 35rem !important;
   overflow: hidden;
 }
 
-@media screen and (max-width: 960px) {
-  .review-photo__main {
-    width: 100%;
-  }
-}
 
-.review-photo__main-outer:focus {
+.production-photo__main-outer:focus {
   outline: none;
 }
 
-.review-photo__main-outer {
+.production-photo__main-outer {
   min-height: 560px !important;
 }
 
-.review-photo__main-inner {
+.production-photo__main-inner {
   width: 100%;
-  height: 20.625rem;
+  height: 35rem;
   background-size: cover;
   background-position: center;
 }
 
-.review-info__tabs-block {
+.production-info__tabs-block {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 4px;
   display: flex;
@@ -120,7 +112,7 @@
 
 
 
-.review-info__tab-item {
+.production-info__tab-item {
   line-height: 1.875rem;
   font-size:  rem(18px);
   text-align: center;
@@ -133,21 +125,21 @@
 
 }
 
-.review-info__tab-item.state-active {
+.production-info__tab-item.state-active {
   background-color: $main-color;
 
   color: #ffffff;
 }
 
 
-.review-info__body {
+.production-info__body {
   padding: 0 20px;
 
 }
 
 
 
-.review-info__list {
+.production-info__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -156,7 +148,7 @@
 
 }
 
-.review-info__list-item {
+.production-info__list-item {
   flex-grow: 1;
   max-width: 100px;
   padding: 0;
@@ -165,40 +157,40 @@
 
 
 
-.review-info__list-label {
+.production-info__list-label {
   color: #363636;
   font-size: rem(16px);
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.review-info__list-text {
+.production-info__list-text {
   font-weight: 300;
   font-size: rem(14px);
   margin-bottom: 30px;
 }
 
-.review-info__client-block {
+.production-info__client-block {
 }
 
-.review-info__client {
+.production-info__client {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
 }
 
-.review-info__client-info {
+.production-info__client-info {
   padding-left: 20px;
 }
 
-.review-info__client-ava {
+.production-info__client-ava {
   width: 3.3125rem;
   height: 3.3125rem;
   border-radius: 2px;
   overflow: hidden;
 }
 
-.review-info__client-name {
+.production-info__client-name {
   font-size: rem(16px);
   font-weight: bold;
   line-height: 1.5;
@@ -208,14 +200,14 @@
   margin-bottom: 10px;
 }
 
-.review-info__client-address {
+.production-info__client-address {
   font-size: rem(16px);
   font-weight: 300;
   color: rgba(54, 54, 54, 0.5)  ;
   margin-bottom: 25px;
 }
 
-.review-info__client-message {
+.production-info__client-message {
   font-weight: 300;
   font-size: rem(14px);
 }
@@ -281,12 +273,114 @@
 }
 
 @media screen and (max-width: 960px) {
-  .advantages-form__side.review-form-image {
+  .advantages-form__side.production-form-image {
     display: none;
   }
 
+}
+
+.production-info__desc {
+  font-size: rem(24px);
+  font-weight: 300;
+  padding-left: 23%;
+  min-height: 100px;
+  margin-bottom: 80px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.production-info__desc:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 96px;
+	height: 96px;
+    margin-top: -48px;
+    background-repeat: no-repeat;
+    background-position: center center;
 
 }
 
+.production-info__desc--icon1:before {
+  background-image: url(../img/production/decoration/1.png);
+}
+
+.production-info__desc--icon2:before {
+  background-image: url(../img/production/decoration/2.png);
+}
+
+.production-info__desc--icon3:before {
+  background-image: url(../img/production/decoration/3.png);
+}
+
+.production-info__desc:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 17%;
+	width: 20px;
+	height: 20px;
+    margin-top: -10px;
+	background: url("../img/production/arrow.png") no-repeat center;
+}
+
+.production-info__content {
+  padding-top: 30px;
+  padding-left: 4%;
+}
+
+@media (max-width: 1200px) { /*desctop*/
 
 
+  .production-photo-side {
+    padding-right: 0;
+  }
+  .production-side {
+    width: 100%;
+  }
+  .production-photo-side {
+    padding-bottom: 25%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .production-photo__list-wrapper {
+    display: none !important;
+  }
+
+  .production-photo__main {
+    width: 100%;
+  }
+  .production-photo-side {
+    padding-bottom: 50%;
+  }
+
+  .production-info__desc {
+    padding-left: 0;
+    padding-top: 110px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .production-info__desc:before {
+    top: 0;
+    left: 50%;
+    margin-top: 0;
+    margin-left: -48px;
+
+  }
+
+  .production-info__desc:after {
+    margin-top: 0;
+    left: 70%;
+    top: 28%;
+  }
+
+
+
+}

@@ -1,0 +1,78 @@
+// --------------------- it-modal -------------------------
+section#it-modal1.it-modal
+	.it-modal__wrap
+		.it-modal__header
+			.it-modal__img-box
+				img.it-modal__img(src='static/img/modal/1.png', alt='')
+			.it-modal__header-content
+				.it-modal__title
+					| Обратный звонок
+				.it-modal__subtitle
+					| Оставьте контактные данные,
+					br
+					| и мы вам перезвоним!
+		.it-modal__content
+			form.it-modal__form.it-form--hide(action='/sendCallBack.php', method='POST', name='modal-form', data-it-form='', enctype='multipart/form-data')
+				input(type='hidden', name='FORM_HEADER', value='Узнать стоимость квартиры')
+				.it-modal__input-wrap
+					label.it-modal__input-inner-wrap
+						.it-modal__input-title Ваше имя:
+						input.it-modal__input(name='name', maxlength='200', value='', placeholder='Ваше имя:', required='')
+					label.it-modal__input-inner-wrap
+						.it-modal__input-title Телефон:
+						input.it-modal__input(type='tel', name='phone', maxlength='200', value='', placeholder='Телефон:', data-phone='true', required='')
+					.it-modal__checkbox-wrap
+						label.it-checkbox
+							input.it-checkbox__default(type='checkbox', name='AGREE', checked='', required='')
+							span.it-checkbox__pseudo.it-modal__checkbox__pseudo
+							span.it-checkbox__text.it-modal__checkbox__text Я согласен с Политикой конфеденциальности
+					.it-modal__buttons
+						button.it-btn.it-modal__btn(type='submit')
+							| Отправить
+					input(type='hidden', value='modal-form', name='FORM_NAME')
+					input(type='hidden', name='name')
+					input(type='hidden', name='phone')
+				.it-form__success
+					| Спасибо!
+					br
+					|  Ваша заявка принята.
+
+
+// --------------------- it-modal -------------------------
+section#it-modal2.it-modal
+	.it-modal__wrap
+		.it-modal__header
+			.it-modal__img-box
+				img.it-modal__img(src='static/img/modal/1.png', alt='')
+			.it-modal__header-content
+				.it-modal__title
+					| Вызвать замерщика
+				.it-modal__subtitle
+					| Оставьте контактные данные,
+					br
+					| и мы вам перезвоним!
+		.it-modal__content
+			form.it-modal__form.it-form--hide(action='/sendCallBack.php', method='POST', name='modal-form', data-it-form='', enctype='multipart/form-data')
+				input(type='hidden', name='FORM_HEADER', value='Узнать стоимость квартиры')
+				.it-modal__input-wrap
+					label.it-modal__input-inner-wrap
+						.it-modal__input-title Ваше имя:
+						input.it-modal__input(name='name', maxlength='200', value='', placeholder='Ваше имя:', required='')
+					label.it-modal__input-inner-wrap
+						.it-modal__input-title Телефон:
+						input.it-modal__input(type='tel', name='phone', maxlength='200', value='', placeholder='Телефон:', data-phone='true', required='')
+					.it-modal__checkbox-wrap
+						label.it-checkbox
+							input.it-checkbox__default(type='checkbox', name='AGREE', checked='', required='')
+							span.it-checkbox__pseudo.it-modal__checkbox__pseudo
+							span.it-checkbox__text.it-modal__checkbox__text Я согласен с Политикой конфеденциальности
+					.it-modal__buttons
+						button.it-btn.it-modal__btn(type='submit')
+							| Отправить
+					input(type='hidden', value='modal-form', name='FORM_NAME')
+					input(type='hidden', name='name')
+					input(type='hidden', name='phone')
+				.it-form__success
+					| Спасибо!
+					br
+					|  Ваша заявка принята.
