@@ -560,5 +560,28 @@ $(function () {
         $(this).parent().find(".it-callback__file-name").text(f_name.join(', '));
     });
 
+    /* ------------------- fancybox ------------------- */
+
+
+    $("[data-fancybox]").fancybox({
+        helpers: {
+            overlay: {
+                locked: false
+            }
+        }
+    });
+
+    $("[data-modal]").fancybox({
+        padding: 0,
+        helpers: {
+            overlay: {
+                locked: false
+            }
+        }
+
+    });
+
+
+
 
 });

@@ -5,5 +5,6 @@ module.exports = [
     "./gulp/tasks/scripts",
     "./gulp/tasks/imagemin",
     "./gulp/tasks/watch",
-    "./gulp/tasks/smartgrid"
+    "./gulp/tasks/smartgrid",
+    "./gulp/tasks/uncss"
 ];

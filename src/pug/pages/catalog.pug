@@ -89,20 +89,21 @@ section.it-catalog.it-all--min-indent
 				-   while ( i < catalogList.length) {
 				li.it-catalog__item
 						.it-catalog__img-box
-							img.it-catalog__img(src="static/img/catalog/" + (i + 1) + ".jpg", alt='')
+							- var iCountPlus = (i + 1);
+							a(href="static/img/catalog/" +  iCountPlus + "_big.jpg" data-modal="" rel="catalog" + iCountPlus)
+								img.it-catalog__img(src="static/img/catalog/" + iCountPlus + ".jpg", alt='')
 
 						.it-catalog__content
 							.it-catalog__title
 								|	#{catalogList[i].title}
 							ul.it-catalog__inner-list
 								-   for (var x = 0; x < catalogList[i]['list'].length; x++) {
-									li.it-catalog__inner-item
 										| #{catalogList[i]['list'][x]}
 								- }
 							.it-catalog__price
 								|	#{catalogList[i].price}
 							.it-catalog__buttons
-								a(href="#").it-btn.it-catalog__btn Заказать
+								a(href='#it-modal1', data-modal='').it-btn.it-catalog__btn Заказать
 
 							- count++;
 							-	i++

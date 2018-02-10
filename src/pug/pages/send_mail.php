@@ -61,13 +61,10 @@ switch ($s_type_form) {
         break;
     case 'calc_section':
         $s_name_message = 'Заявка на расчет стоимости кухни';
-        //$s_type_kitchen = $s_mass['kitchen_type'];
         $i_length = $s_mass['calc_length']."см";
         $i_width = $s_mass['calc_width']."см";
         $i_width2 = $s_mass['calc_width_second']."см";
-       // $s_wall_panel = $s_mass['wall_panel_material'];
-       // $s_worktop = $s_mass['сountertop_materia'];
-        //$s_closers = $s_mass['furniture'];
+
 
         if ($s_mass['kitchen_type'] == "2")
             $i_width2 = "-";
