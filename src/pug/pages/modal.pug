@@ -17,10 +17,10 @@ section#it-modal1.it-modal
 				.it-modal__input-wrap
 					label.it-modal__input-inner-wrap
 						.it-modal__input-title Ваше имя:
-						input.it-modal__input(name='name', maxlength='200', value='', placeholder='Ваше имя:', required='')
+						input.it-modal__input(name='name', maxlength='200', value='', placeholder='Иван', required='')
 					label.it-modal__input-inner-wrap
 						.it-modal__input-title Телефон:
-						input.it-modal__input(type='tel', name='phone', maxlength='200', value='', placeholder='Телефон:', data-phone='true', required='')
+						input.it-modal__input(type='tel', name='phone', maxlength='200', value='', placeholder='+7 (999) 999-99-99', data-phone='true', required='', data-mask='phone')
 					.it-modal__checkbox-wrap
 						label.it-checkbox
 							input.it-checkbox__default(type='checkbox', name='AGREE', checked='', required='')
@@ -57,10 +57,10 @@ section#it-modal2.it-modal
 				.it-modal__input-wrap
 					label.it-modal__input-inner-wrap
 						.it-modal__input-title Ваше имя:
-						input.it-modal__input(name='name', maxlength='200', value='', placeholder='Ваше имя:', required='')
+						input.it-modal__input(name='name', maxlength='200', value='', placeholder='Иван', required='')
 					label.it-modal__input-inner-wrap
 						.it-modal__input-title Телефон:
-						input.it-modal__input(type='tel', name='phone', maxlength='200', value='', placeholder='Телефон:', data-phone='true', required='')
+						input.it-modal__input(type='tel', name='phone', maxlength='200', value='', placeholder='+7 (999) 999-99-99', data-phone='true', required='', data-mask='phone')
 					.it-modal__checkbox-wrap
 						label.it-checkbox
 							input.it-checkbox__default(type='checkbox', name='AGREE', checked='', required='')
@@ -76,3 +76,132 @@ section#it-modal2.it-modal
 					| Спасибо!
 					br
 					|  Ваша заявка принята.
+.it-modal-policy.it-modal#it-modal-policy
+	.it-container
+		.it-modal-policy__wrap
+			div(style="font-size:24px;font-family:'Roboto';", data-customstyle='yes')
+				| Политика
+				| обработки
+				br
+				| персональных данных
+			div(style="font-size:14px;font-family:'Roboto';", data-customstyle='yes')
+				| Предоставляя
+				| свои
+				| персональные
+				| данные
+				| Пользователь
+				| даёт
+				| согласие на
+				| обработку,
+				| хранение и
+				| использование
+				| своих
+				| персональных
+				| данных на
+				| основании ФЗ №
+				| 152-ФЗ «О
+				| персональных
+				| данных» от
+				| 27.07.2006 г.
+				| в
+				| следующих
+				| целях:
+				br
+				br
+				ul
+					li Осуществление клиентской поддержки
+					li Получения Пользователем информации о маркетинговых событиях
+					li
+						| Проведения аудита и прочих внутренних исследований с целью повышения
+						| качества
+						| предоставляемых услуг.
+				|                                                                                                           Под
+				|                                                                                                           персональными
+				|                                                                                                           данными
+				|                                                                                                           подразумевается
+				|                                                                                                           любая
+				|                                                                                                           информация
+				|                                                                                                           личного
+				|                                                                                                           характера,
+				|                                                                                                           позволяющая
+				|                                                                                                           установить
+				|                                                                                                           личность
+				|                                                                                                           Пользователя/Покупателя
+				|                                                                                                           такая как:
+				br
+				br
+				ul
+					li Фамилия, Имя, Отчество
+					li Дата рождения
+					li Контактный телефон
+					li Адрес электронной почты
+					li Почтовый адрес
+				|                                                                                                           Персональные
+				|                                                                                                           данные
+				|                                                                                                           Пользователей
+				|                                                                                                           хранятся
+				|                                                                                                           исключительно
+				|                                                                                                           на
+				|                                                                                                           электронных
+				|                                                                                                           носителях и
+				|                                                                                                           обрабатываются
+				|                                                                                                           с
+				|                                                                                                           использованием
+				|                                                                                                           автоматизированных
+				|                                                                                                           систем, за
+				|                                                                                                           исключением
+				|                                                                                                           случаев, когда
+				|                                                                                                           неавтоматизированная
+				|                                                                                                           обработка
+				|                                                                                                           персональных
+				|                                                                                                           данных
+				|                                                                                                           необходима
+				|                                                                                                           в связи с
+				|                                                                                                           исполнением
+				|                                                                                                           требований
+				|                                                                                                           законодательства.
+				br
+				br
+				|  Компания обязуется не передавать полученные персональные данные третьим
+				|                                                                                                           лицам, за
+				|                                                                                                           исключением
+				|                                                                                                           следующих
+				|                                                                                                           случаев:
+				br
+				br
+				ol
+					li
+						| По запросам уполномоченных органов государственной власти РФ только по
+						| основаниям и в порядке, установленным законодательством РФ
+					li
+						| Стратегическим партнерам, которые работают с Компанией для предоставления
+						| продуктов и услуг, или тем из них, которые помогают Компании реализовывать
+						| продукты и услуги потребителям. Мы предоставляем третьим лицам минимальный
+						| объем
+						| персональных данных, необходимый только для оказания требуемой услуги или
+						| проведения необходимой транзакции.
+				|                                                                                                           Компания
+				|                                                                                                           оставляет
+				|                                                                                                           за собой право
+				|                                                                                                           вносить
+				|                                                                                                           изменения
+				|                                                                                                           в
+				|                                                                                                           одностороннем
+				|                                                                                                           порядке в
+				|                                                                                                           настоящие
+				|                                                                                                           правила,
+				|                                                                                                           при условии,
+				|                                                                                                           что
+				|                                                                                                           изменения не
+				|                                                                                                           противоречат
+				|                                                                                                           действующему
+				|                                                                                                           законодательству
+				|                                                                                                           РФ. Изменения
+				|                                                                                                           условий
+				|                                                                                                           настоящих
+				|                                                                                                           правил
+				|                                                                                                           вступают в
+				|                                                                                                           силу после их
+				|                                                                                                           публикации на
+				|                                                                                                           Сайте.
+				b

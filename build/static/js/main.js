@@ -130,40 +130,40 @@ $("html").on("click", ".review-info__tab-item", function() {
 
 uploads = [];
 
-submit_form_wf = function(form) {
-    var form_data, i, j, name, phone, ref, section;
-    section = $(form).find("input[name=section]").val();
-    name = $(form).find("input[name=name]").val();
-    phone = $(form).find("input[name=phone]").val();
-    form_data = new FormData();
-    for (i = j = 0, ref = uploads.length; 0 <= ref ? j < ref : j > ref; i = 0 <= ref ? ++j : --j) {
-        form_data.append("file[" + (i + 1) + "]", uploads[i]);
-    }
-    form_data.append("form[section]", section);
-    form_data.append("form[name]", name);
-    form_data.append("form[phone]", phone);
-    $.ajax({
-        data: form_data,
-        type: "POST",
-        processData: false,
-        contentType: false,
-        url: "/send_mail.php",
-        dataType: "json",
-        success: function(result) {
-            if (result.status === "success") {
-                close_popup(".form-popup");
-                show_popup(".thank-popup");
-            }
-            if (result.message) {
-                return $(".thank-popup .popup-paragraph").text(result.message);
-            }
-        }
-    });
-    $(form).trigger("reset");
-    $(".file-field__button-name").text("Файл не выбран");
-    uploads.length = 0;
-    return false;
-};
+// submit_form_wf = function(form) {
+//     var form_data, i, j, name, phone, ref, section;
+//     section = $(form).find("input[name=section]").val();
+//     name = $(form).find("input[name=name]").val();
+//     phone = $(form).find("input[name=phone]").val();
+//     form_data = new FormData();
+//     for (i = j = 0, ref = uploads.length; 0 <= ref ? j < ref : j > ref; i = 0 <= ref ? ++j : --j) {
+//         form_data.append("file[" + (i + 1) + "]", uploads[i]);
+//     }
+//     form_data.append("form[section]", section);
+//     form_data.append("form[name]", name);
+//     form_data.append("form[phone]", phone);
+//     $.ajax({
+//         data: form_data,
+//         type: "POST",
+//         processData: false,
+//         contentType: false,
+//         url: "/send_mail.php",
+//         dataType: "json",
+//         success: function(result) {
+//             if (result.status === "success") {
+//                 close_popup(".form-popup");
+//                 show_popup(".thank-popup");
+//             }
+//             if (result.message) {
+//                 return $(".thank-popup .popup-paragraph").text(result.message);
+//             }
+//         }
+//     });
+//     $(form).trigger("reset");
+//     $(".file-field__button-name").text("Файл не выбран");
+//     uploads.length = 0;
+//     return false;
+// };
 
 submit_form = function(form) {
     $.ajax({
@@ -282,81 +282,6 @@ jQuery(function() {
             }
         }
     });
-    $("#advantages_form").validate({
-        submitHandler: submit_form,
-        rules: {
-            name: {
-                required: true
-            },
-            phone: {
-                required: true,
-                mobile_phone: true
-            },
-            check: {
-                required: true
-            }
-        }
-    });
-    $("#review_form").validate({
-        submitHandler: submit_form_wf,
-        rules: {
-            name: {
-                required: true
-            },
-            phone: {
-                required: true,
-                mobile_phone: true
-            },
-            check: {
-                required: true
-            }
-        }
-    });
-    $("#offer-form").validate({
-        submitHandler: submit_form,
-        rules: {
-            name: {
-                required: true
-            },
-            phone: {
-                required: true,
-                mobile_phone: true
-            },
-            check: {
-                required: true
-            }
-        }
-    });
-    $("#contacts_form").validate({
-        submitHandler: submit_form,
-        rules: {
-            name: {
-                required: true
-            },
-            phone: {
-                required: true,
-                mobile_phone: true
-            },
-            check: {
-                required: true
-            }
-        }
-    });
-    $("#popup_form").validate({
-        submitHandler: submit_form,
-        rules: {
-            name: {
-                required: true
-            },
-            phone: {
-                required: true,
-                mobile_phone: true
-            },
-            check: {
-                required: true
-            }
-        }
-    });
     $('.review-photo__main').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -426,7 +351,7 @@ jQuery(function() {
             hideIconOnBalloonOpen: false,
             balloonOffset: [44, -20],
             iconLayout: 'default#image',
-            iconImageHref: 'images/map_point.png',
+            iconImageHref: 'static/img/map_point.png',
             iconImageSize: [74, 79],
             iconImageOffset: [-25, -25]
         });
@@ -560,7 +485,6 @@ $(function () {
         $(this).parent().find(".it-callback__file-name").text(f_name.join(', '));
     });
 
-
     /* ------------------- fancybox ------------------- */
 
 
@@ -575,6 +499,7 @@ $(function () {
         }
 
     });
+
 
 
 

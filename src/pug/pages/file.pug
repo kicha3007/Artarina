@@ -9,13 +9,16 @@ section.it-file
 			.it-file__half.it-file__half--right
 				.it-file__half-inner
 					.it-callback-title.it-file__title У вас есть фото кухни, которую вы хотите?
-					.it-callback__subtitle.it-file__subtitle Отправьте его нам, и мы рассчитаем стоимость, предложим варианты, как сделать лучше
+					.it-callback__subtitle.it-file__subtitle
+						|Отправьте его нам, и мы рассчитаем стоимость, предложим варианты,
+						br
+						| как сделать лучше
 					form.it-callback-callback__form.it-form--hide(action='' method='POST' name='callback-form')
 						.it-callback__input-wrap.it-file__input-wrap
 							.it-callback__half.it-file__callback-half
-								input.it-callback__input(type="text" name='name', maxlength='200', value='', placeholder='Иван', required)
+								input.it-callback__input(type="text" name='name', maxlength='200', value='', placeholder='Ваше имя', required)
 							.it-callback__half.it-file__callback-half
-								input.it-callback__input(type='tel', name='phone', maxlength='200', value='', placeholder='+ 7 (999) 999-99-99', data-phone='true', required)
+								input.it-callback__input(type='tel', name='phone', maxlength='200', value='', placeholder='Ваш телефон', data-phone='true', required, data-mask='phone')
 							.it-checkbox-wrap.it-file__checkbox-wrap
 								label.it-checkbox
 									input.it-checkbox__default(type="checkbox" name="AGREE" checked)

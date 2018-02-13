@@ -94,7 +94,8 @@
 .calc-section__select-ico {
   position: absolute;
   right: 22px;
-  top: 15px;
+  top: 18px;
+  z-index: 10;
 }
 
 .calc-section__select-ico path {
@@ -714,10 +715,13 @@ Index Style
   position: relative; }
 .input-field label.error {
   color: #ff5053;
-  font-size: 0.75rem;
+  font-size: .75rem;
   white-space: nowrap;
   position: absolute;
-  top: 105%; }
+  padding: 20px;
+  top: 105%;
+  left: 13%;
+text-align: center}
 
 .input-field__label {
   font-size: rem(16px);

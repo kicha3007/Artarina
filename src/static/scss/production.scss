@@ -27,7 +27,6 @@
   padding-right: 1.875rem;
 }
 
-
 .production-photo-container {
   height: 20.625rem;
 }
@@ -78,13 +77,11 @@
   opacity: 1;
 }
 
-
 .production-photo__main {
   width: 82%;
   height: 35rem !important;
   overflow: hidden;
 }
-
 
 .production-photo__main-outer:focus {
   outline: none;
@@ -110,11 +107,9 @@
   margin-bottom: 30px;
 }
 
-
-
 .production-info__tab-item {
   line-height: 1.875rem;
-  font-size:  rem(18px);
+  font-size: rem(18px);
   text-align: center;
   color: rgba(0, 0, 0, 1);
   display: inline-block;
@@ -131,20 +126,16 @@
   color: #ffffff;
 }
 
-
 .production-info__body {
   padding: 0 20px;
 
 }
-
-
 
 .production-info__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
-
 
 }
 
@@ -154,8 +145,6 @@
   padding: 0;
   list-style-type: none;
 }
-
-
 
 .production-info__list-label {
   color: #363636;
@@ -203,7 +192,7 @@
 .production-info__client-address {
   font-size: rem(16px);
   font-weight: 300;
-  color: rgba(54, 54, 54, 0.5)  ;
+  color: rgba(54, 54, 54, 0.5);
   margin-bottom: 25px;
 }
 
@@ -291,17 +280,19 @@
   align-items: center;
 }
 
+
+
 .production-info__desc:before {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 50%;
-	left: 0;
-	width: 96px;
-	height: 96px;
-    margin-top: -48px;
-    background-repeat: no-repeat;
-    background-position: center center;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 96px;
+  height: 96px;
+  margin-top: -48px;
+  background-repeat: no-repeat;
+  background-position: center center;
 
 }
 
@@ -318,24 +309,24 @@
 }
 
 .production-info__desc:after {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 50%;
-	left: 17%;
-	width: 20px;
-	height: 20px;
-    margin-top: -10px;
-	background: url("../img/production/arrow.png") no-repeat center;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background: url("../img/production/arrow.png") no-repeat center;
 }
 
 .production-info__content {
-  padding-top: 30px;
+  padding-top: 40px;
   padding-left: 4%;
+  margin-bottom: -20px;
 }
 
 @media (max-width: 1200px) { /*desctop*/
-
 
   .production-photo-side {
     padding-right: 0;
@@ -381,6 +372,5 @@
     top: 28%;
   }
 
-
-
 }
+

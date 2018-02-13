@@ -50,12 +50,12 @@
               <form class="it-callback-callback__form it-form--hide" action="" method="POST" name="callback-form">
                 <div class="it-callback__input-wrap">
                   <div class="it-callback__half">
-                    <input class="it-callback__input" type="text" name="NAME" maxlength="200" value="" placeholder="Иван" required>
+                    <input class="it-callback__input" type="text" name="NAME" maxlength="200" value="" placeholder="Ваше имя" required>
                   </div>
                   <div class="it-callback__half">
-                    <input class="it-callback__input" type="tel" name="PHONE" maxlength="200" value="" placeholder="+ 7 (999) 999-99-99" data-phone="true" required>
+                    <input class="it-callback__input" type="tel" name="PHONE" maxlength="200" value="" placeholder="Ваш телефон" data-phone="true" required data-mask="phone">
                   </div>
-                  <div class="it-callback__half it-callback__buttons"><a class="it-btn it-callback__btn" href="">Отправить заявку</a></div>
+                  <div class="it-callback__half it-callback__buttons"><a class="it-btn it-callback__btn" href="">Узнать стоимость</a></div>
                 </div>
                 <div class="it-form__success">Спасибо!<br> Ваша заявка принята.</div>
                 <div class="it-checkbox-wrap it-callback__checkbox-wrap">
@@ -104,31 +104,6 @@
             </div>
           </div>
         </section>
-        <div class="main-page__footer">
-          <footer class="it-footer">
-            <div class="it-container">
-              <div class="footer__wrap">
-                <div class="footer__half">
-                  <div class="footer__text">ООО «Артарина»<br><a href="#">Политика конфиденциальности</a></div>
-                </div>
-                <div class="footer__half">
-                  <div class="footer__text">
-                    625007, Россия, г. Тюмень,
-                    ул. Николая Чаплина, 117
-                  </div>
-                </div>
-                <div class="footer__half"><a class="footer__link" href="#">artarinaa@mail.ru</a><a class="footer__link" href="#">связаться с нами</a></div>
-                <div class="footer__half">
-                  <div class="footer__social">Мы в социальных сетях:</div><a class="footer__img-box footer__img-box--indent" href="https://vk.com/artarinaa"><img class="footer__img" src="static/img/footer/1.png" alt=""></a><a class="footer__img-box" href="https://www.instagram.com/mk_artarina/"><img class="footer__img" src="static/img/footer/2.png" alt=""></a>
-                </div>
-              </div>
-              <div class="footer__bottom"></div>
-              <!--.footer__copy-->
-              <!--	a.footer__copy-link(href='https://iq-adv.ru/', target='_blank')-->
-              <!--		| Разработка сайта - IQ Online-->
-            </div>
-          </footer>
-        </div>
         <div class="it-all-title">Почему у нас дешевле?</div>
         <!-- --------------------- it-why --------------------------->
         <section class="it-why">
@@ -170,107 +145,91 @@
             <div class="it-catalog__wrap">
               <ul class="it-catalog__list">
                 <li class="it-catalog__item">
-                  <div class="it-catalog__img-box"><img class="it-catalog__img" src="static/img/catalog/1.jpg" alt=""></div>
+                  <div class="it-catalog__img-box"><a href="static/img/catalog/1_big.jpg" data-modal="" rel="catalog1"><img class="it-catalog__img" src="static/img/catalog/1.jpg" alt=""></a>
+                  </div>
                   <div class="it-catalog__content">
-                    <div class="it-catalog__title">	Кухня 1 (артикул)</div>
-                    <ul class="it-catalog__inner-list">
-                      <li class="it-catalog__inner-item">Фасады: мдф пленка пвх </li>
-                      <li class="it-catalog__inner-item">Столешница: пластик</li>
-                      <li class="it-catalog__inner-item">Фурнитура: Blum</li>
+                    <div class="it-catalog__title">	Кухня 1 </div>
+                    <ul class="it-catalog__inner-list">Фасады: мдф пленка пвх Столешница: пластикФурнитура: Blum
                     </ul>
                     <div class="it-catalog__price">	Цена от 185 000 руб</div>
-                    <div class="it-catalog__buttons"><a class="it-btn it-catalog__btn" href="#">Заказать</a></div>
+                    <div class="it-catalog__buttons"><a class="it-btn it-catalog__btn" href="#it-modal1" data-modal="">Подробнее</a></div>
                   </div>
                 </li>
                 <li class="it-catalog__item">
-                  <div class="it-catalog__img-box"><img class="it-catalog__img" src="static/img/catalog/2.jpg" alt=""></div>
+                  <div class="it-catalog__img-box"><a href="static/img/catalog/2_big.jpg" data-modal="" rel="catalog2"><img class="it-catalog__img" src="static/img/catalog/2.jpg" alt=""></a>
+                  </div>
                   <div class="it-catalog__content">
-                    <div class="it-catalog__title">	Кухня 2 (артикул)</div>
-                    <ul class="it-catalog__inner-list">
-                      <li class="it-catalog__inner-item">Фасады: мдф пленка пвх </li>
-                      <li class="it-catalog__inner-item">Столешница: пластик </li>
-                      <li class="it-catalog__inner-item">Фурнитура: Blum+ Boyard</li>
+                    <div class="it-catalog__title">	Кухня 2 </div>
+                    <ul class="it-catalog__inner-list">Фасады: мдф пленка пвх Столешница: пластик Фурнитура: Blum+ Boyard
                     </ul>
-                    <div class="it-catalog__price">	Цена от 2 000 руб</div>
-                    <div class="it-catalog__buttons"><a class="it-btn it-catalog__btn" href="#">Заказать</a></div>
+                    <div class="it-catalog__price">	Цена от 125 000 руб</div>
+                    <div class="it-catalog__buttons"><a class="it-btn it-catalog__btn" href="#it-modal1" data-modal="">Подробнее</a></div>
                   </div>
                 </li>
                 <li class="it-catalog__item">
-                  <div class="it-catalog__img-box"><img class="it-catalog__img" src="static/img/catalog/3.jpg" alt=""></div>
+                  <div class="it-catalog__img-box"><a href="static/img/catalog/3_big.jpg" data-modal="" rel="catalog3"><img class="it-catalog__img" src="static/img/catalog/3.jpg" alt=""></a>
+                  </div>
                   <div class="it-catalog__content">
-                    <div class="it-catalog__title">	Кухня 3 (артикул)</div>
-                    <ul class="it-catalog__inner-list">
-                      <li class="it-catalog__inner-item">Фасады: пластик </li>
-                      <li class="it-catalog__inner-item">Столешница: Blum</li>
-                      <li class="it-catalog__inner-item">Фурнитура: 105 000</li>
+                    <div class="it-catalog__title">	Кухня 3 </div>
+                    <ul class="it-catalog__inner-list">Фасады: мдф пленка пвх  Столешница: пластик Фурнитура: Blum
                     </ul>
-                    <div class="it-catalog__price">	Цена от 2 000 руб</div>
-                    <div class="it-catalog__buttons"><a class="it-btn it-catalog__btn" href="#">Заказать</a></div>
+                    <div class="it-catalog__price">	Цена от 105 000 руб</div>
+                    <div class="it-catalog__buttons"><a class="it-btn it-catalog__btn" href="#it-modal1" data-modal="">Подробнее</a></div>
                   </div>
                 </li>
                 <li class="it-catalog__item">
-                  <div class="it-catalog__img-box"><img class="it-catalog__img" src="static/img/catalog/4.jpg" alt=""></div>
+                  <div class="it-catalog__img-box"><a href="static/img/catalog/4_big.jpg" data-modal="" rel="catalog4"><img class="it-catalog__img" src="static/img/catalog/4.jpg" alt=""></a>
+                  </div>
                   <div class="it-catalog__content">
-                    <div class="it-catalog__title">	Кухня 4 (артикул)</div>
-                    <ul class="it-catalog__inner-list">
-                      <li class="it-catalog__inner-item">Фасады: мдф пленка пвх</li>
-                      <li class="it-catalog__inner-item">Столешница: пластик</li>
-                      <li class="it-catalog__inner-item">Фурнитура: Boyard</li>
+                    <div class="it-catalog__title">	Кухня 4 </div>
+                    <ul class="it-catalog__inner-list">Фасады: мдф пленка пвхСтолешница: пластикФурнитура: Boyard
                     </ul>
                     <div class="it-catalog__price">	Цена от 86 000 руб</div>
-                    <div class="it-catalog__buttons"><a class="it-btn it-catalog__btn" href="#">Заказать</a></div>
+                    <div class="it-catalog__buttons"><a class="it-btn it-catalog__btn" href="#it-modal1" data-modal="">Подробнее</a></div>
                   </div>
                 </li>
                 <li class="it-catalog__item">
-                  <div class="it-catalog__img-box"><img class="it-catalog__img" src="static/img/catalog/5.jpg" alt=""></div>
+                  <div class="it-catalog__img-box"><a href="static/img/catalog/5_big.jpg" data-modal="" rel="catalog5"><img class="it-catalog__img" src="static/img/catalog/5.jpg" alt=""></a>
+                  </div>
                   <div class="it-catalog__content">
-                    <div class="it-catalog__title">	Кухня 5 (артикул)</div>
-                    <ul class="it-catalog__inner-list">
-                      <li class="it-catalog__inner-item">Фасады:  мдф крашенные + патина золото  </li>
-                      <li class="it-catalog__inner-item">Столешница: искуственный камень</li>
-                      <li class="it-catalog__inner-item">Фурнитура: Blum</li>
+                    <div class="it-catalog__title">	Кухня 5 </div>
+                    <ul class="it-catalog__inner-list">Фасады:  мдф крашенные + патина золото  Столешница: искуственный каменьФурнитура: Blum
                     </ul>
                     <div class="it-catalog__price">	Цена от 360 000 руб</div>
-                    <div class="it-catalog__buttons"><a class="it-btn it-catalog__btn" href="#">Заказать</a></div>
+                    <div class="it-catalog__buttons"><a class="it-btn it-catalog__btn" href="#it-modal1" data-modal="">Подробнее</a></div>
                   </div>
                 </li>
                 <li class="it-catalog__item">
-                  <div class="it-catalog__img-box"><img class="it-catalog__img" src="static/img/catalog/6.jpg" alt=""></div>
+                  <div class="it-catalog__img-box"><a href="static/img/catalog/6_big.jpg" data-modal="" rel="catalog6"><img class="it-catalog__img" src="static/img/catalog/6.jpg" alt=""></a>
+                  </div>
                   <div class="it-catalog__content">
-                    <div class="it-catalog__title">	Кухня 6 (артикул)</div>
-                    <ul class="it-catalog__inner-list">
-                      <li class="it-catalog__inner-item">Фасады: мдф пластик</li>
-                      <li class="it-catalog__inner-item">Столешница: пластик</li>
-                      <li class="it-catalog__inner-item">Фурнитура: Blum</li>
+                    <div class="it-catalog__title">	Кухня 6 </div>
+                    <ul class="it-catalog__inner-list">Фасады: мдф пластикСтолешница: пластикФурнитура: Blum
                     </ul>
                     <div class="it-catalog__price">	Цена от 180 000 руб</div>
-                    <div class="it-catalog__buttons"><a class="it-btn it-catalog__btn" href="#">Заказать</a></div>
+                    <div class="it-catalog__buttons"><a class="it-btn it-catalog__btn" href="#it-modal1" data-modal="">Подробнее</a></div>
                   </div>
                 </li>
                 <li class="it-catalog__item">
-                  <div class="it-catalog__img-box"><img class="it-catalog__img" src="static/img/catalog/7.jpg" alt=""></div>
+                  <div class="it-catalog__img-box"><a href="static/img/catalog/7_big.jpg" data-modal="" rel="catalog7"><img class="it-catalog__img" src="static/img/catalog/7.jpg" alt=""></a>
+                  </div>
                   <div class="it-catalog__content">
-                    <div class="it-catalog__title">	Кухня 7 (артикул)</div>
-                    <ul class="it-catalog__inner-list">
-                      <li class="it-catalog__inner-item">Фасады: мдф пленка ПВХ</li>
-                      <li class="it-catalog__inner-item">Столешница: пластик</li>
-                      <li class="it-catalog__inner-item">Фурнитура: Boyard</li>
+                    <div class="it-catalog__title">	Кухня 7 </div>
+                    <ul class="it-catalog__inner-list">Фасады: мдф пленка ПВХСтолешница: пластикФурнитура: Boyard
                     </ul>
                     <div class="it-catalog__price">	Цена от 76 000 руб</div>
-                    <div class="it-catalog__buttons"><a class="it-btn it-catalog__btn" href="#">Заказать</a></div>
+                    <div class="it-catalog__buttons"><a class="it-btn it-catalog__btn" href="#it-modal1" data-modal="">Подробнее</a></div>
                   </div>
                 </li>
                 <li class="it-catalog__item">
-                  <div class="it-catalog__img-box"><img class="it-catalog__img" src="static/img/catalog/8.jpg" alt=""></div>
+                  <div class="it-catalog__img-box"><a href="static/img/catalog/8_big.jpg" data-modal="" rel="catalog8"><img class="it-catalog__img" src="static/img/catalog/8.jpg" alt=""></a>
+                  </div>
                   <div class="it-catalog__content">
-                    <div class="it-catalog__title">	Кухня 8 (артикул)</div>
-                    <ul class="it-catalog__inner-list">
-                      <li class="it-catalog__inner-item">Фасады: мдф пленка</li>
-                      <li class="it-catalog__inner-item">Столешница: искуственный камень</li>
-                      <li class="it-catalog__inner-item">Фурнитура: Blum</li>
+                    <div class="it-catalog__title">	Кухня 8 </div>
+                    <ul class="it-catalog__inner-list">Фасады: мдф пленкаСтолешница: искуственный каменьФурнитура: Blum
                     </ul>
                     <div class="it-catalog__price">	Цена от 250 000 руб</div>
-                    <div class="it-catalog__buttons"><a class="it-btn it-catalog__btn" href="#">Заказать</a></div>
+                    <div class="it-catalog__buttons"><a class="it-btn it-catalog__btn" href="#it-modal1" data-modal="">Подробнее</a></div>
                   </div>
                 </li>
               </ul>
@@ -280,17 +239,17 @@
         <section class="it-callback">
           <div class="it-container">
             <div class="it-callback__wrap">
-              <div class="it-callback-title">Кроме кухонь, мы делаем шкафы, детские, гардеробные</div>
-              <div class="it-callback__subtitle">Оставьте заявку на быстрый расчет стоимости вашей мебели</div>
+              <div class="it-callback-title">Понравились наши проекты?</div>
+              <div class="it-callback__subtitle">Закажите бесплатный расчет вашей новой кухни</div>
               <form class="it-callback-callback__form it-form--hide" action="" method="POST" name="callback-form">
                 <div class="it-callback__input-wrap">
                   <div class="it-callback__half">
-                    <input class="it-callback__input" type="text" name="NAME" maxlength="200" value="" placeholder="Иван" required>
+                    <input class="it-callback__input" type="text" name="NAME" maxlength="200" value="" placeholder="Ваше имя" required>
                   </div>
                   <div class="it-callback__half">
-                    <input class="it-callback__input" type="tel" name="PHONE" maxlength="200" value="" placeholder="+ 7 (999) 999-99-99" data-phone="true" required>
+                    <input class="it-callback__input" type="tel" name="PHONE" maxlength="200" value="" placeholder="Ваш телефон" data-phone="true" required data-mask="phone">
                   </div>
-                  <div class="it-callback__half it-callback__buttons"><a class="it-btn it-callback__btn" href="">Отправить заявку</a></div>
+                  <div class="it-callback__half it-callback__buttons"><a class="it-btn it-callback__btn" href="">Узнать стоимость</a></div>
                 </div>
                 <div class="it-form__success">Спасибо!<br> Ваша заявка принята.</div>
                 <div class="it-checkbox-wrap it-callback__checkbox-wrap">
@@ -325,7 +284,7 @@
         </section>
         <div class="it-all-title">Рассчитайте стоимость вашей кухни:</div>
         <!-- calc section-->
-        <section class="site-section it-container--big it-all--min-indent" id="block2" data-section="2">
+        <section class="site-section it-container--big it-all--indent" id="block2" data-section="2">
           <div class="it-calc__decotation"></div>
           <div class="it-calc__wrap">
             <div class="it-calc__half it-calc__half--left">
@@ -339,12 +298,11 @@
                         <div class="calc-section__select">
                           <input name="kitchen_type" type="hidden" value="1">
                           <div class="calc-section__select-button">
-                            <div class="calc-section__select-title">П-образная кухня
-                              <div class="calc-section__select-ico image-block">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewbox="0 0 13 8">
-                                  <path fill="none" fill-rule="evenodd" stroke="#505050" stroke-width="2" d="M1 1l5.205 5.007L11.41 1"></path>
-                                </svg>
-                              </div>
+                            <div class="calc-section__select-title">П-образная кухня</div>
+                            <div class="calc-section__select-ico image-block">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewbox="0 0 13 8">
+                                <path fill="none" fill-rule="evenodd" stroke="#505050" stroke-width="2" d="M1 1l5.205 5.007L11.41 1"></path>
+                              </svg>
                             </div>
                           </div>
                           <div class="calc-section__select-dropdown">
@@ -478,7 +436,7 @@
                   </div>
                   <div class="it-accordion2__content" data-it-accord-item="">
                     <div class="it-accordion2__desc">
-                      <div class="it-accordion2__desc-title">Ответ</div>                        В оздоровительную путевку входит: размещение, питание, бассейн 1 раз в сутки, медицинские услуги(кислородный коктейль и галокамера), досуг.
+                      <div class="it-accordion2__desc-title">Ответ</div>                        Описание
                     </div>
                   </div>
                 </li>
@@ -495,7 +453,7 @@
                   </div>
                   <div class="it-accordion2__content" data-it-accord-item="">
                     <div class="it-accordion2__desc">
-                      <div class="it-accordion2__desc-title">Ответ</div>Процедуры отпускаются в субботу, в воскресенье - выходной. В праздничные дни процедуры не оказываются, кроме Новогодних праздников.
+                      <div class="it-accordion2__desc-title">Ответ</div>Описание
                     </div>
                   </div>
                 </li>
@@ -512,7 +470,7 @@
                   </div>
                   <div class="it-accordion2__content" data-it-accord-item="">
                     <div class="it-accordion2__desc">
-                      <div class="it-accordion2__desc-title">Ответ</div>Паспорт, страховой полис, станаторно-курортная карта, путевка. Для ребенка дополнительно справка СЭС.
+                      <div class="it-accordion2__desc-title">Ответ</div>Описание
                     </div>
                   </div>
                 </li>
@@ -529,7 +487,7 @@
                   </div>
                   <div class="it-accordion2__content" data-it-accord-item="">
                     <div class="it-accordion2__desc">
-                      <div class="it-accordion2__desc-title">Ответ</div>Для эффективного лечения необходимо не менее 10 дней. Желательно  -  14.
+                      <div class="it-accordion2__desc-title">Ответ</div>Описание
                     </div>
                   </div>
                 </li>
@@ -546,7 +504,7 @@
                   </div>
                   <div class="it-accordion2__content" data-it-accord-item="">
                     <div class="it-accordion2__desc">
-                      <div class="it-accordion2__desc-title">Ответ</div>По государственным контрактам перенести дату заезда не возможно. По свободной продаже возможно, но необходимо минимум за неделю созвониться с отделом продаж (т.727-955) и, в случае наличия свободных мест, перенести срок заезда.
+                      <div class="it-accordion2__desc-title">Ответ</div>Описание
                     </div>
                   </div>
                 </li>
@@ -564,14 +522,14 @@
               <div class="it-file__half it-file__half--right">
                 <div class="it-file__half-inner">
                   <div class="it-callback-title it-file__title">У вас есть фото кухни, которую вы хотите?</div>
-                  <div class="it-callback__subtitle it-file__subtitle">Отправьте его нам, и мы рассчитаем стоимость, предложим варианты, как сделать лучше</div>
+                  <div class="it-callback__subtitle it-file__subtitle">Отправьте его нам, и мы рассчитаем стоимость, предложим варианты,<br>как сделать лучше</div>
                   <form class="it-callback-callback__form it-form--hide" action="" method="POST" name="callback-form">
                     <div class="it-callback__input-wrap it-file__input-wrap">
                       <div class="it-callback__half it-file__callback-half">
-                        <input class="it-callback__input" type="text" name="name" maxlength="200" value="" placeholder="Иван" required>
+                        <input class="it-callback__input" type="text" name="name" maxlength="200" value="" placeholder="Ваше имя" required>
                       </div>
                       <div class="it-callback__half it-file__callback-half">
-                        <input class="it-callback__input" type="tel" name="phone" maxlength="200" value="" placeholder="+ 7 (999) 999-99-99" data-phone="true" required>
+                        <input class="it-callback__input" type="tel" name="phone" maxlength="200" value="" placeholder="Ваш телефон" data-phone="true" required data-mask="phone">
                       </div>
                       <div class="it-checkbox-wrap it-file__checkbox-wrap">
                         <label class="it-checkbox">
@@ -609,7 +567,7 @@
                   <div class="it-order__img-box"><img class="it-order__img" src="static/img/order/arrow.png" alt=""></div>
                   <div class="it-order__inner-item">
                     <div class="it-order__title">	Экономия денег</div>
-                    <div class="it-order__desc">	Экономите до 40%, не переплачивая посредникам у нас собственное производство</div>
+                    <div class="it-order__desc">	Экономите до 40%, не переплачивая посредникам - у нас собственное производство</div>
                   </div>
                 </li>
                 <li class="it-order__item">
@@ -872,7 +830,7 @@
             <div class="it-container">
               <div class="footer__wrap">
                 <div class="footer__half">
-                  <div class="footer__text">ООО «Артарина»<br><a href="#">Политика конфиденциальности</a></div>
+                  <div class="footer__text">ООО «Артарина»<br><a href="#it-modal-policy" data-modal>Политика конфиденциальности</a></div>
                 </div>
                 <div class="footer__half">
                   <div class="footer__text">
@@ -880,9 +838,9 @@
                     ул. Николая Чаплина, 117
                   </div>
                 </div>
-                <div class="footer__half"><a class="footer__link" href="#">artarinaa@mail.ru</a><a class="footer__link" href="#">связаться с нами</a></div>
+                <div class="footer__half"><a class="footer__link" href="#">artarinaa@mail.ru</a><a class="footer__link" href="tel:+73452499-522">связаться с нами</a></div>
                 <div class="footer__half">
-                  <div class="footer__social">Мы в социальных сетях:</div><a class="footer__img-box footer__img-box--indent" href="https://vk.com/artarinaa"><img class="footer__img" src="static/img/footer/1.png" alt=""></a><a class="footer__img-box" href="https://www.instagram.com/mk_artarina/"><img class="footer__img" src="static/img/footer/2.png" alt=""></a>
+                  <div class="footer__social">Мы в социальных сетях:</div><a class="footer__img-box footer__img-box--indent" href="https://vk.com/artarinaa" target="blank"><img class="footer__img" src="static/img/footer/1.png" alt=""></a><a class="footer__img-box" href="https://www.instagram.com/mk_artarina/" target="blank"><img class="footer__img" src="static/img/footer/2.png" alt=""></a>
                 </div>
               </div>
               <div class="footer__bottom"></div>
@@ -908,11 +866,11 @@
                 <div class="it-modal__input-wrap">
                   <label class="it-modal__input-inner-wrap">
                     <div class="it-modal__input-title">Ваше имя:</div>
-                    <input class="it-modal__input" name="name" maxlength="200" value="" placeholder="Ваше имя:" required="">
+                    <input class="it-modal__input" name="name" maxlength="200" value="" placeholder="Иван" required="">
                   </label>
                   <label class="it-modal__input-inner-wrap">
                     <div class="it-modal__input-title">Телефон:</div>
-                    <input class="it-modal__input" type="tel" name="phone" maxlength="200" value="" placeholder="Телефон:" data-phone="true" required="">
+                    <input class="it-modal__input" type="tel" name="phone" maxlength="200" value="" placeholder="+7 (999) 999-99-99" data-phone="true" required="" data-mask="phone">
                   </label>
                   <div class="it-modal__checkbox-wrap">
                     <label class="it-checkbox">
@@ -947,11 +905,11 @@
                 <div class="it-modal__input-wrap">
                   <label class="it-modal__input-inner-wrap">
                     <div class="it-modal__input-title">Ваше имя:</div>
-                    <input class="it-modal__input" name="name" maxlength="200" value="" placeholder="Ваше имя:" required="">
+                    <input class="it-modal__input" name="name" maxlength="200" value="" placeholder="Иван" required="">
                   </label>
                   <label class="it-modal__input-inner-wrap">
                     <div class="it-modal__input-title">Телефон:</div>
-                    <input class="it-modal__input" type="tel" name="phone" maxlength="200" value="" placeholder="Телефон:" data-phone="true" required="">
+                    <input class="it-modal__input" type="tel" name="phone" maxlength="200" value="" placeholder="+7 (999) 999-99-99" data-phone="true" required="" data-mask="phone">
                   </label>
                   <div class="it-modal__checkbox-wrap">
                     <label class="it-checkbox">
@@ -970,6 +928,131 @@
             </div>
           </div>
         </section>
+        <div class="it-modal-policy it-modal" id="it-modal-policy">
+          <div class="it-container">
+            <div class="it-modal-policy__wrap">
+              <div style="font-size:24px;font-family:'Roboto';" data-customstyle="yes">
+                Политика
+                обработки<br>персональных данных
+              </div>
+              <div style="font-size:14px;font-family:'Roboto';" data-customstyle="yes">
+                Предоставляя
+                свои
+                персональные
+                данные
+                Пользователь
+                даёт
+                согласие на
+                обработку,
+                хранение и
+                использование
+                своих
+                персональных
+                данных на
+                основании ФЗ №
+                152-ФЗ «О
+                персональных
+                данных» от
+                27.07.2006 г.
+                в
+                следующих
+                целях:<br><br>
+                <ul>
+                  <li>Осуществление клиентской поддержки</li>
+                  <li>Получения Пользователем информации о маркетинговых событиях</li>
+                  <li>
+                    Проведения аудита и прочих внутренних исследований с целью повышения
+                    качества
+                    предоставляемых услуг.
+                  </li>
+                </ul>                                                                                                          Под
+                                                                                                                          персональными
+                                                                                                                          данными
+                                                                                                                          подразумевается
+                                                                                                                          любая
+                                                                                                                          информация
+                                                                                                                          личного
+                                                                                                                          характера,
+                                                                                                                          позволяющая
+                                                                                                                          установить
+                                                                                                                          личность
+                                                                                                                          Пользователя/Покупателя
+                                                                                                                          такая как:<br><br>
+                <ul>
+                  <li>Фамилия, Имя, Отчество</li>
+                  <li>Дата рождения</li>
+                  <li>Контактный телефон</li>
+                  <li>Адрес электронной почты</li>
+                  <li>Почтовый адрес</li>
+                </ul>                                                                                                          Персональные
+                                                                                                                          данные
+                                                                                                                          Пользователей
+                                                                                                                          хранятся
+                                                                                                                          исключительно
+                                                                                                                          на
+                                                                                                                          электронных
+                                                                                                                          носителях и
+                                                                                                                          обрабатываются
+                                                                                                                          с
+                                                                                                                          использованием
+                                                                                                                          автоматизированных
+                                                                                                                          систем, за
+                                                                                                                          исключением
+                                                                                                                          случаев, когда
+                                                                                                                          неавтоматизированная
+                                                                                                                          обработка
+                                                                                                                          персональных
+                                                                                                                          данных
+                                                                                                                          необходима
+                                                                                                                          в связи с
+                                                                                                                          исполнением
+                                                                                                                          требований
+                                                                                                                          законодательства.<br><br> Компания обязуется не передавать полученные персональные данные третьим
+                                                                                                                          лицам, за
+                                                                                                                          исключением
+                                                                                                                          следующих
+                                                                                                                          случаев:<br><br>
+                <ol>
+                  <li>
+                    По запросам уполномоченных органов государственной власти РФ только по
+                    основаниям и в порядке, установленным законодательством РФ
+                  </li>
+                  <li>
+                    Стратегическим партнерам, которые работают с Компанией для предоставления
+                    продуктов и услуг, или тем из них, которые помогают Компании реализовывать
+                    продукты и услуги потребителям. Мы предоставляем третьим лицам минимальный
+                    объем
+                    персональных данных, необходимый только для оказания требуемой услуги или
+                    проведения необходимой транзакции.
+                  </li>
+                </ol>                                                                                                          Компания
+                                                                                                                          оставляет
+                                                                                                                          за собой право
+                                                                                                                          вносить
+                                                                                                                          изменения
+                                                                                                                          в
+                                                                                                                          одностороннем
+                                                                                                                          порядке в
+                                                                                                                          настоящие
+                                                                                                                          правила,
+                                                                                                                          при условии,
+                                                                                                                          что
+                                                                                                                          изменения не
+                                                                                                                          противоречат
+                                                                                                                          действующему
+                                                                                                                          законодательству
+                                                                                                                          РФ. Изменения
+                                                                                                                          условий
+                                                                                                                          настоящих
+                                                                                                                          правил
+                                                                                                                          вступают в
+                                                                                                                          силу после их
+                                                                                                                          публикации на
+                                                                                                                          Сайте.<b></b>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="static/js/jquery.min.js" type="text/javascript"></script>
